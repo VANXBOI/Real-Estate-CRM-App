@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --sidebar-w: 240px;
+  --brand: #3b5bdb;
+  --brand-dark: #1a2a6c;
+  --surface: #f8f9fc;
+  --card: #ffffff;
+  --border: #e8ecf4;
+  --text-primary: #111827;
+  --text-muted: #6b7280;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--surface);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+.badge-new       { background:#dbeafe; color:#1e40af; }
+.badge-contacted { background:#fef3c7; color:#92400e; }
+.badge-qualified { background:#d1fae5; color:#065f46; }
+.badge-closed    { background:#f3f4f6; color:#374151; }
+.badge-lost      { background:#fee2e2; color:#991b1b; }
+.badge-negotiation { background:#fef3c7; color:#92400e; }
+.badge-agreement   { background:#dbeafe; color:#1e40af; }
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.kanban-col {
+  min-width: 280px;
+  max-width: 280px;
+}
+
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 10px; }
